@@ -79,7 +79,6 @@ const hbs = exphbs.create({
 app.engine('handlebars', hbs.engine);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'handlebars');
-
 app.use('/api/carts', cartsRouter);
 app.use('/', viewsRouter);
 app.use('/api/sessions', sessionRouter)
