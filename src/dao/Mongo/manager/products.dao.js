@@ -62,7 +62,7 @@ export default class ProductManager extends BasicManager {
     }
     }
 
-    async updatedOne(id, obj) {
+    async updateOne(id, obj) {
         const result = await productsModel.updateOne({ _id: id }, obj);
         return result; 
     }
